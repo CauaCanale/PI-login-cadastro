@@ -6,6 +6,18 @@
     font-family: "inter", sans-serif;
 }
 
+/* Para navegadores WebKit (Chrome, Safari) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Para Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 body, .estrutura{
     background: url(../img/fundo-cadastro.png) no-repeat center center;
     height: 100vh;
@@ -26,11 +38,11 @@ body, .estrutura{
 }
 
 .estrutura{ /* esta criando o container do formulario, no caso o quadrado que fica no meio da tela*/
-    background: rgba(255, 255, 255, 0.671);
+    background: rgba(211, 211, 211, 0.74);
     border-radius: 12px;
     text-align: center;
-    width: 500px;
-    height: 450px;
+    width: 600px;
+    height: 700px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 

@@ -28,7 +28,7 @@ body, .estrutura{
 }
 
 .estrutura{ /* esta criando o container do formulario, no caso o quadrado que fica no meio da tela*/
-    background: rgba(255, 255, 255, 0.671);
+    background: rgba(211, 211, 211, 0.74);
     border-radius: 12px;
     text-align: center;
     width: 500px;
