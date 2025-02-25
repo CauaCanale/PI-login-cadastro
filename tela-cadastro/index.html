@@ -12,7 +12,12 @@
     <link rel="stylesheet" href="../tela-cadastro/assets/js/olhar-senha.js">
 </head>
 
+<ul class="voltar-icon">
+    <li><a href=""><i class="bi bi-arrow-left-square-fill"></i></a></li>
+</ul>
+
 <body>
+
     <div class="estrutura">
         <div class="login-form">
             <h2 class="titulo-login">Cadastrar-se</h2>
@@ -27,18 +32,20 @@
                     <input type="email" id="email" placeholder="Email:" title="Escreva o seu Email" required>
                 </div>
                 <div class="form-group" id="form-group-senha">
-                    <input type="password" id="senha" placeholder="Senha:" title="Escreva a sua Senha escolhida" required> 
+                    <input type="password" id="senha" placeholder="Senha:" title="Escreva a sua Senha escolhida"
+                        required>
                     <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
                 </div>
                 <div class="form-group">
                     <label for="telefone"></label>
-                    <input type="tel" id="telefone" pattern="^\(\d{2}\) \d{9}$" placeholder="Telefone:" required title="Escreva o seu Telefone"
-                        maxlength="14"
+                    <input type="tel" id="telefone" pattern="^\(\d{2}\) \d{9}$" placeholder="Telefone:" required
+                        title="Escreva o seu Telefone" maxlength="14"
                         oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\d{2})(\d{0,9})/, '($1) $2');">
                 </div>
                 <div class="form-group">
                     <label for="state"></label>
-                    <select id="state" name="state" required style="width: 315px; padding: 8px; margin-bottom: 15px; margin-top: 5px; border-radius: 5px; border-color: transparent; font-size: 16px; appearance: none; -webkit-appearance: none; -moz-appearance: none;">
+                    <select id="state" name="state" required
+                        style="width: 315px; padding: 8px; margin-bottom: 15px; margin-top: 5px; border-radius: 5px; border-color: transparent; font-size: 16px; appearance: none; -webkit-appearance: none; -moz-appearance: none;">
                         <option value="">Selecione um estado</option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
@@ -71,12 +78,15 @@
                 </div>
                 <div class="form-group">
                     <label for="cep"></label>
-                    <input type="text" id="cep" name="cep" placeholder="CEP:" required maxlength="10" title="Escreva o seu CEP"
-                           oninput="this.value = this.value.replace(/[^1-9]/g, '').replace(/(\d{5})(\d{0,3})/, '$1-$2');" required>
+                    <input type="text" id="cep" name="cep" placeholder="CEP:" required maxlength="10"
+                        title="Escreva o seu CEP"
+                        oninput="this.value = this.value.replace(/[^1-9]/g, '').replace(/(\d{5})(\d{0,3})/, '$1-$2');"
+                        required>
                 </div>
                 <div class="form-group">
                     <label for="numero"></label>
-                    <input type="number" id="numero" name="numero" placeholder="Número da casa" title="Escreva o Numero da casa" required>
+                    <input type="number" id="numero" name="numero" placeholder="Número da casa"
+                        title="Escreva o Numero da casa" required>
                 </div>
                 <div class="form-group">
                     <button type="submit">cadastrar</button>
